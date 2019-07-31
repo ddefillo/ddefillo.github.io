@@ -24,18 +24,18 @@ hr {
   background-image: url("header.jpg");
   background-position: center;
   background-size:cover;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
   height: 100%;
 }
 
-.start:hover {
+.blur {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  transition-duration: 1s;
+}
+
+.blur:hover {
   filter: none;
-  transition: 1s filter linear;
-  -webkit-transition: 1s -webkit-filter linear;
-  -moz-transition: 1s -moz-filter linear;
-  -ms-transition: 1s -ms-filter linear;
-  -o-transition: 1s -o-filter linear;
+  transition-duration: 1s;
 }
 
 h1 {
